@@ -41,6 +41,9 @@ In this chapter, you'll dive into Linux file permissions, ownership, and user gr
 ## Author
 
 - Julien Barbier
+[![Instagram](https://img.shields.io/badge/Instagram-%40your_username-%23E4405F)](https://www.instagram.com/your_username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%40your_username-%230077B5)](https://www.linkedin.com/in/your_username)
+[![Twitter](https://img.shields.io/badge/Twitter-%40your_username-%231DA1F2)](https://twitter.com/your_username)
 
 ## License
 
