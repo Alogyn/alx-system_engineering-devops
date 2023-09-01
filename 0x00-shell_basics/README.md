@@ -72,7 +72,9 @@ For detailed instructions and examples, refer to the respective script files in 
 
 ## Author
 
-- Julien Barbier
+- **Julien Barbier**
+
+[YouTube](https://www.youtube.com/@0xJulien) | [Twitter](https://twitter.com/julienbarbier42) | [LinkedIn](https://www.linkedin.com/in/julienbarbier/)
 
 ## License
 
