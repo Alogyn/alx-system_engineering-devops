@@ -65,9 +65,13 @@ The project contains a series of scripts, each addressing specific tasks related
 
 For detailed instructions and examples, refer to the respective script files in this repository.
 
+---
+
 ## Author
 
-- Julien Barbier
+- **Julien Barbier**
+
+[YouTube](https://www.youtube.com/@0xJulien) | [Twitter](https://twitter.com/julienbarbier42) | [LinkedIn](https://www.linkedin.com/in/julienbarbier/)
 
 ## License
 
@@ -75,4 +79,4 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
 
-© 2023 ALX. All rights reserved.
+© 2023 [ALX](https://www.alxafrica.com/). All rights reserved.
