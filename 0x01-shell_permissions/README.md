@@ -1,107 +1,73 @@
 # 0x01. Shell, Permissions - DevOps Project
 
-This project is part of the DevOps curriculum and focuses on shell basics and permissions in a Linux environment. The project consists of a series of tasks that cover various aspects of shell scripting, user permissions, and file ownership.
-
-## Overview
-
-- **Project Name**: Shell, Permissions
-- **Project Type**: DevOps
-- **Shell**: Bash
-- **Author**: Julien Barbier
-- **Weight**: 1
-- **Start Date**: August 31, 2023, 4:00 AM
-- **End Date**: September 2, 2023, 4:00 AM
-
-## Project Description
-
-This is an ongoing second chance project with an auto-review that will be launched at the deadline. The project is designed to test your knowledge and understanding of shell commands, Linux file permissions, and related topics.
+This project is part of the DevOps curriculum and focuses on gaining proficiency in working with shell basics and permissions in a Linux environment. The project consists of a series of tasks that cover various aspects of shell scripting, user permissions, and file ownership.
 
 ## Learning Objectives
 
-By completing this project, you will gain knowledge and skills in the following areas:
+By completing this project, you will:
 
-- Understanding Linux file permissions.
-- Familiarity with commands like `chmod`, `sudo`, `su`, `chown`, and `chgrp`.
-- Representing file permissions for owner, group, and others.
-- Changing file permissions, ownership, and groups.
-- Running commands with root privileges.
-- Creating users and groups.
-- Printing user and group information.
-
-## Resources
-
-To successfully complete this project, you can refer to the following resources:
-
-- [Linux Permissions](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
-- `man` or `help` pages for commands like `chmod`, `sudo`, `su`, `chown`, `chgrp`, `id`, `groups`, `whoami`, `adduser`, `useradd`, `addgroup`
-
-## Requirements
-
-### General
-
-- Allowed Editors: vi, vim, emacs
-- All scripts will be tested on Ubuntu 20.04 LTS.
-- Each script should be exactly two lines long (`$ wc -l file` should print 2).
-- All script files should end with a new line.
-- The first line of each script should be `#!/bin/bash`.
-- Provide a `README.md` file at the root of the project folder, describing each script's purpose.
-- Avoid using backticks, `&&`, `||`, or `;` in your scripts.
-- Ensure that all script files are executable using `chmod`.
-
-### Quiz Questions
-
-- Complete the quiz successfully.
+- Gain a deep understanding of Linux file permissions.
+- Familiarize yourself with essential shell commands like `chmod`, `sudo`, and `chown`.
+- Learn to represent and manipulate file permissions.
+- Understand how to change file ownership and group.
+- Master the execution of commands with root privileges.
 
 ## Project Structure
 
-The project consists of the following tasks:
+The project contains a series of scripts, each addressing specific tasks related to shell basics and permissions. Here's a brief overview of the tasks:
 
-1. **My name is Betty**
-   - Create a script that switches the current user to the user betty.
-   - Example: `$ ./0-iam_betty`
+1. **My name is Betty**: Create a script that switches the current user to the user betty.
 
-2. **Who am I**
-   - Write a script that prints the effective username of the current user.
-   - Example: `$ ./1-who_am_i`
+2. **Who am I**: Write a script that prints the effective username of the current user.
 
-3. **Groups**
-   - Write a script that prints all the groups the current user is part of.
-   - Example: `$ ./2-groups`
+3. **Groups**: Write a script that prints all the groups the current user is part of.
 
-4. **New owner**
-   - Write a script that changes the owner of the file "hello" to the user betty.
-   - Example: `$ sudo ./3-new_owner`
+4. **New owner**: Write a script that changes the owner of the file hello to the user betty.
 
-5. **Empty!**
-   - Write a script that creates an empty file called "hello."
-   - Example: `$ ./4-empty`
+5. **Empty!**: Write a script that creates an empty file called hello.
 
-6. **Execute**
-   - Write a script that adds execute permission to the owner of the file "hello."
-   - Example: `$ ./5-execute`
+6. **Execute**: Write a script that adds execute permission to the owner of the file hello.
 
-7. **Multiple permissions**
-   - Write a script that adds execute permission to the owner and group owner, and read permission to other users, to the file "hello."
-   - Example: `$ ./6-multiple_permissions`
+7. **Multiple permissions**: Write a script that adds execute permission to the owner and the group owner and read permission to other users to the file hello.
 
-8. **Everybody!**
-   - Write a script that adds execution permission to the owner, group owner, and other users, to the file "hello."
-   - Example: `$ ./7-everybody`
+8. **Everybody!**: Write a script that adds execution permission to the owner, the group owner, and the other users to the file hello.
 
-9. **James Bond**
-   - Write a script that sets permissions to the file "hello" as follows:
-     - Owner: no permission at all
-     - Group: no permission at all
-     - Other users: all permissions
-   - Example: `$ ./8-James_Bond`
+9. **James Bond**: Write a script that sets the permission to the file hello as follows: Owner: no permission at all, Group: no permission at all, Other users: all the permissions.
 
-... (continue for all tasks)
+10. **John Doe**: Write a script that sets the mode of the file hello to this: -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello.
 
-## Copyright & Plagiarism
+11. **Look in the mirror**: Write a script that sets the mode of the file hello the same as olleh's mode.
 
-- You are responsible for coming up with solutions for the tasks.
-- Copying and pasting someone else's work is strictly forbidden and will result in removal from the program.
-- You are not allowed to publish any content of this project.
+12. **Directories**: Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner, and all other users.
+
+13. **More directories**: Create a script that creates a directory called my_dir with permissions 751 in the working directory.
+
+14. **Change group**: Write a script that changes the group owner to school for the file hello.
+
+15. **Owner and group (Advanced)**: Write a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
+
+16. **Symbolic links (Advanced)**: Write a script that changes the owner and the group owner of _hello to vincent and staff respectively.
+
+17. **If only (Advanced)**: Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
+
+18. **Star Wars (Advanced)**: Write a script that will play the Star Wars IV episode in the terminal.
+
+## Requirements and Guidelines
+
+- Use allowed editors: vi, vim, emacs.
+- Scripts will be tested on Ubuntu 20.04 LTS.
+- Ensure that scripts are exactly two lines long.
+- End all files with a new line.
+- Start all scripts with `#!/bin/bash`.
+- Provide a README.md file with a description of the repository and explanations of each script.
+- Avoid using backticks, `&&`, `||`, or `;` in your scripts.
+- Make all scripts executable using `chmod`.
+
+For detailed instructions and examples, refer to the respective script files in this repository.
+
+## Author
+
+- Julien Barbier
 
 ## License
 
