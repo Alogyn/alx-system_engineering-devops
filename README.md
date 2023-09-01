@@ -48,4 +48,4 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
 
-© 2023 [ALX](https://www.alxafrica.com/){:target="_blank"}. All rights reserved.
+© 2023 [ALX](https://www.alxafrica.com/). All rights reserved.
