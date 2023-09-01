@@ -68,7 +68,7 @@ The project contains a series of scripts, each addressing specific tasks related
 
 For detailed instructions and examples, refer to the respective script files in this repository.
 
---
+---
 
 ## Author
 
