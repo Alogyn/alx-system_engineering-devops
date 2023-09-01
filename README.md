@@ -6,7 +6,7 @@ Welcome to the System Engineering and DevOps Curriculum! This comprehensive prog
 
 ## Trimester 1: Linux Basics, Permissions, Redirections, Syscalls
 
-### Chapter 1: Linux Basics (0x00. Shell, basics)
+### Chapter 1: Linux Basics (0x00. Shell, basics(0x00-shell_basics))
 
 **Description:** 
 
