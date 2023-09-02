@@ -1,5 +1,5 @@
-<div style="text-align:center;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBWSkyKa63IsN9fdob6ZoPs9Xl9nhJtZxdg&usqp=CAU" alt="Full Width">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBWSkyKa63IsN9fdob6ZoPs9Xl9nhJtZxdg&usqp=CAU" alt="Centered Image" width="50%">
 </div>
 
 # System engineering and Devops Projects
