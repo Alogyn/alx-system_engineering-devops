@@ -1,6 +1,7 @@
 <div style="text-align:center;">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBWSkyKa63IsN9fdob6ZoPs9Xl9nhJtZxdg&usqp=CAU" alt="Full Width Image" width="100%">
 </div>
+
 # System engineering and Devops Projects
 
 ## Introduction
