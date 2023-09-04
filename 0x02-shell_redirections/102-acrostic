@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c l | paste -s | tr -d ''
+cut -c1 "An Acrostic" | paste -s -d '' && echo
