@@ -54,17 +54,18 @@ The project contains a series of scripts, each addressing specific tasks related
 
 19. **File type: School**: Create a magic file school.mgc that can be used with the command file to detect School data files.
 
-## Requirements and Guidelines
+## Resources
 
-- Use allowed editors: vi, vim, emacs.
-- Scripts will be tested on Ubuntu 20.04 LTS.
-- Ensure that scripts are exactly two lines long.
-- End all files with a new line.
-- Start all scripts with `#!/bin/bash`.
-- Provide a README.md file with a description of the repository and explanations of each script.
-- Avoid using backticks, `&&`, `||`, or `;` in your scripts.
-- Make all scripts executable using `chmod`.
-- Ensure that scripts adhere to good coding practices and avoid plagiarism.
+- [What Is “The Shell”?](http://linuxcommand.org/lc3_lts0010.php)
+- [Navigation](http://linuxcommand.org/lc3_lts0020.php)
+- [Looking Around](http://linuxcommand.org/lc3_lts0030.php)
+- [A Guided Tour](http://linuxcommand.org/lc3_lts0040.php)
+- [Manipulating Files](http://linuxcommand.org/lc3_lts0050.php)
+- [Working With Commands](http://linuxcommand.org/lc3_lts0060.php)
+- [Reading Man pages](http://linuxcommand.org/lc3_man_pages/man1.html)
+- [Keyboard shortcuts for Bash](https://www.howtogeek.com/181/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+- [LTS](https://wiki.ubuntu.com/LTS)
+- [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
 
 For detailed instructions and examples, refer to the respective script files in this repository.
 
