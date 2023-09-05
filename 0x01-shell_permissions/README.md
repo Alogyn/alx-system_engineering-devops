@@ -52,22 +52,15 @@ The project contains a series of scripts, each addressing specific tasks related
 
 18. **Star Wars (Advanced)**: Write a script that will play the Star Wars IV episode in the terminal.
 
-## Requirements and Guidelines
+## Resources
 
-- Use allowed editors: vi, vim, emacs.
-- Scripts will be tested on Ubuntu 20.04 LTS.
-- Ensure that scripts are exactly two lines long.
-- End all files with a new line.
-- Start all scripts with `#!/bin/bash`.
-- Provide a README.md file with a description of the repository and explanations of each script.
-- Avoid using backticks, `&&`, `||`, or `;` in your scripts.
-- Make all scripts executable using `chmod`.
+- [Permissions](http://linuxcommand.org/lc3_lts0090.php)
 
 For detailed instructions and examples, refer to the respective script files in this repository.
 
 ---
 
-## Author
+## Special Thanks for Project Guidance to 
 
 - **Julien Barbier**
 
@@ -75,7 +68,7 @@ For detailed instructions and examples, refer to the respective script files in 
 
 ## License
 
-This project is licensed under the terms of the [MIT License](LICENSE).
+This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/privacy-policy/).
 
 ---
 
