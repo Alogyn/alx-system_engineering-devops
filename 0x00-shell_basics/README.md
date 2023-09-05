@@ -36,7 +36,7 @@ The project contains a series of scripts, each addressing specific tasks related
 
 9. **[Bye bye My first directory:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/9-firstdirdeletion)** Delete the directory my_first_directory that is in the /tmp directory.
 
-10. **[Back to the future:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back) Write a script that changes the working directory to the previous one.
+10. **[Back to the future:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back)** Write a script that changes the working directory to the previous one.
 
 11. **[Lists:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/11-lists)** List all files (including hidden ones) in the current directory, parent directory, and /boot directory in long format.
 
