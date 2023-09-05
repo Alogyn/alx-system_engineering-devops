@@ -8,10 +8,11 @@ Welcome to the System Engineering and DevOps Curriculum! This comprehensive prog
 
  - [0x00.](0x00-shell_basics) Shell, basics.
  - [0x01.](0x01-shell_permissions) Shell, permissions.
+ - [0x02.](0x02-shell_redirections) Shell, I/O Redirections and filters
 
 ---
 
-## Author
+## Special Thanks for Project Guidance to 
 
 - **Julien Barbier**
 
@@ -19,7 +20,7 @@ Welcome to the System Engineering and DevOps Curriculum! This comprehensive prog
 
 ## License
 
-This project is licensed under the terms of the [MIT License](LICENSE).
+This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/privacy-policy/).
 
 ---
 
