@@ -46,15 +46,15 @@ The project contains a series of scripts, each addressing specific tasks related
 
 14. **[Copy HTML files:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/14-copy_html)** Copy all HTML files from the current working directory to the parent directory, preserving newer versions.
 
-15. **[Let's move:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/100-lets_move)** Move all files beginning with an uppercase letter to the directory /tmp/u.
+15. **[Let's move (Advanced):](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/100-lets_move)** Move all files beginning with an uppercase letter to the directory /tmp/u.
 
-16. **[Clean Emacs:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/101-clean_emacs)** Delete all files in the current working directory that end with the character ~.
+16. **[Clean Emacs (Advanced):](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/101-clean_emacs)** Delete all files in the current working directory that end with the character ~.
 
-17. **[Tree:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/102-tree)** Create the directories welcome/, welcome/to/, and welcome/to/school in the current directory.
+17. **[Tree (Advanced):](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/102-tree)** Create the directories welcome/, welcome/to/, and welcome/to/school in the current directory.
 
-18. **[Life is a series of commas, not periods:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/103-commas)** Write a command that lists all files and directories of the current directory, separated by commas.
+18. **[Life is a series of commas, not periods (Advanced):](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/103-commas)** Write a command that lists all files and directories of the current directory, separated by commas.
 
-19. **[File type: School:](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc)** Create a magic file school.mgc that can be used with the command file to detect School data files.
+19. **[File type: School (Advanced):](https://github.com/Alogyn/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc)** Create a magic file school.mgc that can be used with the command file to detect School data files.
 
 ## Resources
 
