@@ -16,7 +16,7 @@ By completing this project, you will:
 
 The project contains a series of scripts, each addressing specific tasks related to shell redirections. Here's a brief overview of the tasks:
 
-0. **[Hello World:](hahaha)** Write a script that prints "Hello, World" followed by a new line to the standard output.
+0. **[Hello World:](0-hello_world)** Write a script that prints "Hello, World" followed by a new line to the standard output.
 
 1. **[Confused Smiley:](hahaha)** Write a script that displays a confused smiley "(Ôo)'.
 
