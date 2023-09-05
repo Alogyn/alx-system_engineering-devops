@@ -44,12 +44,12 @@ The project contains a series of scripts, each addressing specific tasks related
 
 ## Resources
 
-### Read or watch:
+#### Read or watch:
 
 - [Shell, I/O Redirection](hahaha)
 - [Special Characters](hahaha)
 
-### man or help:
+#### man or help:
 
 `echo`
 `cat`
