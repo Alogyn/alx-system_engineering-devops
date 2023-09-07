@@ -16,7 +16,7 @@ By completing this project, you will:
 
 The project contains a series of scripts, each addressing specific tasks related to shell basics. Here's a brief overview of the tasks:
 
-> 0. **Where am I?:**
+0. **Where am I?:**
     - **[0-current_working_directory:](0-current_working_directory)** Print the absolute path name of the current working directory.
 
 1. **What's in there?:**
