@@ -74,8 +74,8 @@ The project contains a series of scripts, each addressing specific tasks related
 
 ### Read or watch:
 
-- [Shell, I/O Redirection](hahaha)
-- [Special Characters](hahaha)
+- [Shell, I/O Redirection](http://linuxcommand.org/lc3_lts0070.php)
+- [Special Characters](http://mywiki.wooledge.org/BashGuide/SpecialCharacters)
 
 ### man or help:
 
