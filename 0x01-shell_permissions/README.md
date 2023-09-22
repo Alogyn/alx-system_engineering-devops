@@ -84,7 +84,7 @@ For detailed instructions and examples, refer to the respective script files in 
 
 ## License
 
-This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/privacy-policy/).
+This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/terms-conditions-portal/).
 
 ---
 
