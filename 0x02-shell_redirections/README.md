@@ -1,4 +1,4 @@
-# 0x02. Shell, I/O Redirections and filters - DevOps Project
+# 0x02. Shell, I/O Redirections and filters - DevOps Projec
 
 This project is a part of the DevOps curriculum and aims to enhance your proficiency in working with the shell, specifically Bash, within a Linux environment. Throughout this project, you will engage in tasks that explore various aspects of shell commands, file manipulation, and input/output redirection.
 
