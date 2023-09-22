@@ -21,7 +21,7 @@ Welcome to the System Engineering and DevOps Curriculum! This comprehensive prog
 
 ## License
 
-This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/privacy-policy/).
+This project is licensed under the terms of the [MIT License](https://www.alxafrica.com/terms-conditions-portal/).
 
 ---
 
