@@ -60,16 +60,16 @@ The project is organized into a series of tasks, each focusing on a specific asp
 13. **Floats**
     - **[13-print_float](13-print_float)** Create a script that prints a number stored in the NUM environment variable with exactly two decimal places.
 
-14. **Decimal to Hexadecimal (Advamced)**
+14. **Decimal to Hexadecimal (Advanced)**
     - **[100-decimal_to_hexadecimal](100-decimal_to_hexadecimal)** Convert a decimal number stored in the DECIMAL environment variable to its hexadecimal representation.
 
-15. **Everyone is a proponent of strong encryption (Advamced)**
+15. **Everyone is a proponent of strong encryption (Advanced)**
     - **[101-rot13](101-rot13)** Develop a script that encodes and decodes text using the rot13 encryption method.
 
-16. **The eggs of the brood need to be an odd number (Advamced)**
+16. **The eggs of the brood need to be an odd number (Advanced)**
     - **[102-odd](102-odd)** Write a script that prints every other line from the input, starting with the first line.
 
-17. **I'm an instant star. Just add water and stir. (Advamced)**
+17. **I'm an instant star. Just add water and stir. (Advanced)**
     - **[103-water_and_stir](103-water_and_stir)** Create a script that performs base conversion using environment variables WATER and STIR, storing the result in the base BESTCHOL.
 
 ## Resources
