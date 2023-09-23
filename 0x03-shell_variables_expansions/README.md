@@ -19,58 +19,58 @@ By completing this project, you are expected to achieve the following learning o
 The project is organized into a series of tasks, each focusing on a specific aspect of shell scripting:
 
 0. **<o>**
-    - **[0-alias](0-alias)** Create a script that sets up an alias for the `ls` command, allowing you to remove all files in the current directory with a single command.
+    - **[0-alias:](0-alias)** Create a script that sets up an alias for the `ls` command, allowing you to remove all files in the current directory with a single command.
 
 1. **Hello you**
-    - **[1-hello_you](1-hello_you)** Create a script that greets the current Linux user by printing "hello user."
+    - **[1-hello_you:](1-hello_you)** Create a script that greets the current Linux user by printing "hello user."
 
 2. **The path to success is to take massive, determined action**
-    - **[2-path](2-path)** Expand your system's PATH variable by adding `/action` as the last directory to be searched for programs.
+    - **[2-path:](2-path)** Expand your system's PATH variable by adding `/action` as the last directory to be searched for programs.
 
 3. **If the path be beautiful, let us not ask where it leads**
-    - **[3-paths](3-paths)** Write a script to count the number of directories in the PATH variable.
+    - **[3-paths:](3-paths)** Write a script to count the number of directories in the PATH variable.
 
 4. **Global variables**
-    - **[4-global_variables](4-global_variables)** Create a script that lists all environment variables on your system.
+    - **[4-global_variables:](4-global_variables)** Create a script that lists all environment variables on your system.
 
 5. **Local variables**
-    - **[5-local_variables](5-local_variables)** Write a script that lists both local and environment variables, including functions.
+    - **[5-local_variables:](5-local_variables)** Write a script that lists both local and environment variables, including functions.
 
 6. **Local variable**
-    - **[6-create_local_variable](6-create_local_variable)** Develop a script that creates a new local variable named BEST with the value "School."
+    - **[6-create_local_variable:](6-create_local_variable)** Develop a script that creates a new local variable named BEST with the value "School."
 
 7. **Global variable**
-    - **[7-create_global_variable](7-create_global_variable)** Create a script that establishes a new global variable named BEST with the value "School."
+    - **[7-create_global_variable:](7-create_global_variable)** Create a script that establishes a new global variable named BEST with the value "School."
 
 8. **Every addition to true knowledge is an addition to human power**
-    - **[8-true_knowledge](8-true_knowledge)** Write a script that performs an arithmetic operation by adding 128 to the value stored in the TRUEKNOWLEDGE environment variable.
+    - **[8-true_knowledge:](8-true_knowledge)** Write a script that performs an arithmetic operation by adding 128 to the value stored in the TRUEKNOWLEDGE environment variable.
 
 9. **Divide and rule**
-    - **[9-divide_and_rule](9-divide_and_rule)** Create a script that calculates the result of dividing POWER by DIVIDE, where POWER and DIVIDE are environment variables.
+    - **[9-divide_and_rule:](9-divide_and_rule)** Create a script that calculates the result of dividing POWER by DIVIDE, where POWER and DIVIDE are environment variables.
 
 10. **Love is anterior to life, posterior to death, initial of creation, and the exponent of breath**
-    - **[10-love_exponent_breath](10-love_exponent_breath)** Build a script that calculates and displays the result of raising BREATH to the power of LOVE, where BREATH and LOVE are environment variables.
+    - **[10-love_exponent_breath:](10-love_exponent_breath)** Build a script that calculates and displays the result of raising BREATH to the power of LOVE, where BREATH and LOVE are environment variables.
 
 11. **There are 10 types of people in the world -- Those who understand binary, and those who don't**
-    - **[11-binary_to_decimal](11-binary_to_decimal)** Write a script to convert a binary number stored in the BINARY environment variable to its decimal equivalent.
+    - **[11-binary_to_decimal:](11-binary_to_decimal)** Write a script to convert a binary number stored in the BINARY environment variable to its decimal equivalent.
 
 12. **Combination**
-    - **[12-combinations](12-combinations)** Generate all possible combinations of two lowercase letters (excluding "oo") and print them alphabetically.
+    - **[12-combinations:](12-combinations)** Generate all possible combinations of two lowercase letters (excluding "oo") and print them alphabetically.
 
 13. **Floats**
-    - **[13-print_float](13-print_float)** Create a script that prints a number stored in the NUM environment variable with exactly two decimal places.
+    - **[13-print_float:](13-print_float)** Create a script that prints a number stored in the NUM environment variable with exactly two decimal places.
 
 14. **Decimal to Hexadecimal (Advanced)**
-    - **[100-decimal_to_hexadecimal](100-decimal_to_hexadecimal)** Convert a decimal number stored in the DECIMAL environment variable to its hexadecimal representation.
+    - **[100-decimal_to_hexadecimal:](100-decimal_to_hexadecimal)** Convert a decimal number stored in the DECIMAL environment variable to its hexadecimal representation.
 
 15. **Everyone is a proponent of strong encryption (Advanced)**
-    - **[101-rot13](101-rot13)** Develop a script that encodes and decodes text using the rot13 encryption method.
+    - **[101-rot13:](101-rot13)** Develop a script that encodes and decodes text using the rot13 encryption method.
 
 16. **The eggs of the brood need to be an odd number (Advanced)**
-    - **[102-odd](102-odd)** Write a script that prints every other line from the input, starting with the first line.
+    - **[102-odd:](102-odd)** Write a script that prints every other line from the input, starting with the first line.
 
 17. **I'm an instant star. Just add water and stir. (Advanced)**
-    - **[103-water_and_stir](103-water_and_stir)** Create a script that performs base conversion using environment variables WATER and STIR, storing the result in the base BESTCHOL.
+    - **[103-water_and_stir:](103-water_and_stir)** Create a script that performs base conversion using environment variables WATER and STIR, storing the result in the base BESTCHOL.
 
 ## Resources
 
