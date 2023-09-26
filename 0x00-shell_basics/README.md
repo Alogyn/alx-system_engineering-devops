@@ -112,10 +112,6 @@ For detailed instructions and examples, refer to the respective script files in 
 
 ---
 
-## Author
-
-- **Mohamed Derfoufi**
-
 ## Special Thanks for Project Guidance to 
 
 - **Julien Barbier**
