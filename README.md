@@ -4,7 +4,7 @@
 
 Welcome to the System Engineering and DevOps Curriculum! This comprehensive program is designed to equip you with essential skills and knowledge in two interconnected domains: System Engineering and DevOps. Whether you're a seasoned professional or a newcomer to these fields, this curriculum offers a structured learning path to help you master critical concepts and practices.
 
-## Trimester 1: Linux Basics, Permissions, Redirections, Syscalls
+## Table of contents
 
  - [0x00.](0x00-shell_basics) Shell, basics.
  - [0x01.](0x01-shell_permissions) Shell, permissions.
@@ -12,6 +12,10 @@ Welcome to the System Engineering and DevOps Curriculum! This comprehensive prog
  - [0x03.](0x03-shell_variables_expansions) Shell, init files, variables and expansions
 
 ---
+
+## Author
+
+- **Mohamed Derfoufi**
 
 ## Special Thanks for Project Guidance to 
 
