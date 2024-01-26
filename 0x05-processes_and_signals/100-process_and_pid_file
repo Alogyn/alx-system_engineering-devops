@@ -9,13 +9,12 @@ cleanup() {
     exit
 }
 
-# Trap SIGTERM and SIGINT signals and define custom behavior
-trap 'echo "I hate the kill command"' SIGTERM
-trap 'echo "Y U no love me?!"' SIGINT
-trap cleanup SIGQUIT SIGTERM
-
 # Loop indefinitely
 while true; do
     echo "To infinity and beyond"
     sleep 2
+    # Trap SIGTERM and SIGINT signals and define custom behavior
+    trap 'echo "Y U no love me?!"' SIGINT
+    trap 'echo "I hate the kill command" && cleanup' SIGTERM
+    trap 'cleanup' SIGQUIT
 done
