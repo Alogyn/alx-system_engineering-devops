@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Write the PID of this script to /var/run/myscript.pid
+echo $$ > /var/run/myscript.pid
+
+# Function to remove PID file and exit
+cleanup() {
+    rm -f /var/run/myscript.pid
+    exit
+}
+
+# Trap SIGTERM and SIGINT signals and define custom behavior
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap cleanup SIGQUIT SIGTERM
+
+# Loop indefinitely
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
