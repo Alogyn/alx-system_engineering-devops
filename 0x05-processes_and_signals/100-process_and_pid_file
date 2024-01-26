@@ -5,7 +5,7 @@ echo $$ > /var/run/myscript.pid
 
 # Function to remove PID file and exit
 cleanup() {
-    rm -f /var/run/myscript.pid
+    rm /var/run/myscript.pid
     exit
 }
 
