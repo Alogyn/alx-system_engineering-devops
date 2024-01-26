@@ -4,10 +4,11 @@
 #include <sys/types.h>
 
 /**
- * infinite_while - Runs an infinite while loop.
- *
- * Return: Always 0.
- */
+  * infinite_while - Runs an infinite while loop
+  *
+  * Return: Always 0
+  */
+
 int infinite_while(void)
 {
     while (1)
@@ -18,36 +19,30 @@ int infinite_while(void)
 }
 
 /**
- * main - Creates 5 zombie processes.
+ * main - Creates 5 zombie processes
  *
- * Return: Always 0.
+ * Return: Always 0
  */
+
 int main(void)
 {
-    pid_t pid;
-    int i;
+	pid_t pid;
+	char count = 0;
 
-    for (i = 0; i < 5; i++)
-    {
-        pid = fork();
-        if (pid > 0)
-        {
-            printf("Zombie process created, PID: %d\n", pid);
-        }
-        else if (pid == 0)
-        {
-            // Child process: immediately exit to become zombie
-            exit(0);
-        }
-        else
-        {
-            perror("fork");
-            return (1);
-        }
-    }
+	while (count < 5)
+	{
+		pid = fork();
+		if (pid > 0)
+		{
+			printf("Zombie process created, PID: %d\n", pid);
+			sleep(1);
+			count++;
+		}
+		else
+			exit(0);
+	}
 
-    // Parent process: run infinite loop
-    infinite_while();
+	infinite_while();
 
-    return (0);
+	return (EXIT_SUCCESS);
 }
