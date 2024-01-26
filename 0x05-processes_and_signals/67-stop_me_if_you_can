@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script to send SIGTERM to the 7-highlander process
+
+pkill -f 7-highlander
