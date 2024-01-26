@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# manage_my_process script
-# Continuously writes "I am alive!" to /tmp/my_process
+# Script to write continuously "I am alive!" to /tmp/my_process
 
 while true
 do
