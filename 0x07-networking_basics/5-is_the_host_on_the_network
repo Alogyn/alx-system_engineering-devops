@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script to ping an IP address 5 times
+
+# Check if exactly one argument is passed
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+fi
+
+# Assign the first argument to a variable
+IP_ADDRESS="$1"
+
+# Use ping to ping the IP address 5 times
+ping -c 5 "$IP_ADDRESS"
