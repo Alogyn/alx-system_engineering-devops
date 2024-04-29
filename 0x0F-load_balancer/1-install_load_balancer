@@ -1,29 +1,24 @@
 #!/usr/bin/env bash
-# Configure Nginx so that its HTTP response contains
-# a custom header
-#
-balancer="\
-frontend haproxy_balancer
-    bind *:80
-    mode http
-    default_backend webservers
-    
-backend webservers
+# Installs HAProxy with the following configurations:
+# - Enables management via the init script.
+# - Distributes requests using a round-robin algorithm.
+
+sudo apt-get install -y haproxy
+
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+
+cat <<EOT | sudo tee -a /etc/haproxy/haproxy.cfg
+frontend Randommall.tech
+    timeout client  30000
+    bind 0:80
+    default_backend Randommall.tech_backend
+
+backend Randommall.tech_backend
+    timeout connect  3000
+    timeout server  30000
     balance roundrobin
-    server 26071-web-01 44.210.150.159:80 check
-    server 26071-web-02 35.173.47.15:80 check
-"
-# Update packages
-apt-get -y update
-apt-get -y upgrade
+    server 228560-web-01 54.89.224.2:80 check
+    server 228560-web-02 54.87.109.20:80 check
+EOT
 
-# Add HAProxy PPA
-apt-get -y install software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-2.5
-apt-get -y update
-
-# Install HAProxy
-apt-get -y install haproxy
-cp -a /etc/haproxy/haproxy.cfg{,.orig}
-echo "$balancer" >> /etc/haproxy/haproxy.cfg
-service haproxy restart
+sudo service haproxy restart
