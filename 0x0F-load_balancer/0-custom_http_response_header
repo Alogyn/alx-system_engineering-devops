@@ -1,0 +1,23 @@
+#!/bin/bash
+# This script configures an Ubuntu machine with Nginx
+# It adds a custom HTTP header 'X-Served-By' with the hostname of the server
+
+# Install Nginx if it is not already installed
+sudo apt update
+sudo apt install -y nginx
+
+# Ensure Nginx is running
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+# Configure Nginx to add a custom header
+# Get the hostname of the server
+HOSTNAME="$(hostname)"
+
+# Modify the Nginx configuration to include the custom header
+# We append the configuration inside the http context
+sudo sed -i "/sendfile on;/a \\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+
+# Restart Nginx to apply changes
+sudo systemctl restart nginx
+
