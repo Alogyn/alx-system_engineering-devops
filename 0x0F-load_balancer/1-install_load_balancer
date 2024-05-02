@@ -11,9 +11,9 @@ cat <<EOT | sudo tee -a /etc/haproxy/haproxy.cfg
 frontend Randommall.tech
     timeout client  30000
     bind 0:80
-    default_backend Randommall.tech_backend
+    default_backend alogyn.tech_backend
 
-backend Randommall.tech_backend
+backend alogyn.tech_backend
     timeout connect  3000
     timeout server  30000
     balance roundrobin
