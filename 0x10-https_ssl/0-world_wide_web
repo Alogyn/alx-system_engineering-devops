@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# This script queries DNS records for specific subdomains of a given domain.
+# Usage:
+# To query predefined subdomains (www, lb-01, web-01, web-02): ./0-world_wide_web domain
+# To query a specific subdomain: ./0-world_wide_web domain subdomain
+
+# Function to retrieve and display DNS information for a subdomain of a given domain.
+# Parameters:
+#   $1 - The domain name
+#   $2 - The subdomain name
+domain_information () {
+    # First, declare the variable without assigning it
+    local line
+
+    # Execute the command and assign the output to the variable
+    line=$(dig "$2.$1" +noall +answer | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    if [ $? -ne 0 ]; then
+        echo "Failed to fetch DNS records for $2.$1"
+        return 1
+    fi
+    
+    # Print the result using 'awk' for formatted output
+    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+}
+
+# Main execution block
+if [ "$#" -eq 1 ]; then
+    # If only the domain is provided, query for each of the predefined subdomains
+    domain_information "$1" "www"
+    domain_information "$1" "lb-01"
+    domain_information "$1" "web-01"
+    domain_information "$1" "web-02"
+elif [ "$#" -eq 2 ]; then
+    # If both a domain and a specific subdomain are provided, query for that specific subdomain
+    domain_information "$1" "$2"
+else
+    echo "Usage: $0 <domain> [subdomain]"
+    exit 1
+fi
