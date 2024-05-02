@@ -3,7 +3,7 @@
 # to locate and launch the first instance of bash found in the system's PATH.
 
 # Script Usage:
-# ./1-world_wide_web <domain> [subdomain]
+# ./0-world_wide_web <domain> [subdomain]
 # This script displays DNS record information about specific subdomains. If no subdomain is specified,
 # it will show information for predefined subdomains (www, lb-01, web-01, web-02).
 
