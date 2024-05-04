@@ -1,4 +1,4 @@
-# Client configuration file
+# Connect to a server without typing a password
 Host *
       PasswordAuthentication no
       IdentifyFile ~/.ssh/school
