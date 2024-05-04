@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configure your Nginx server so that /redirect_me is redirecting to another page.
+# Configure your Nginx server so that /redirect_me is redirecting to another page
 # The redirection is configured as a "301 Moved Permanently"
 
 apt-get update
