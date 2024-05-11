@@ -1,0 +1,64 @@
+# What Happens When You Type https://www.google.com and Press Enter
+
+This project provides a comprehensive explanation of the processes that occur when a URL, specifically `https://www.google.com`, is entered into a web browser and the Enter key is pressed. This analysis aims to help both technical and non-technical audiences understand the complex sequence of events that enable web browsing.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [DNS Request](#dns-request)
+- [TCP/IP Connection](#tcpip-connection)
+- [Firewall Considerations](#firewall-considerations)
+- [HTTPS and SSL/TLS](#https-and-ssltls)
+- [Load Balancer](#load-balancer)
+- [Web Server Interaction](#web-server-interaction)
+- [Application Server Dynamics](#application-server-dynamics)
+- [Database Involvement](#database-involvement)
+- [Conclusion](#conclusion)
+- [Further Reading](#further-reading)
+
+## Introduction
+
+This section provides an overview of the journey of a URL from the browser to the server and back, and why understanding this process is crucial for professionals in the tech industry.
+
+## DNS Request
+
+Detailed explanation of the Domain Name System (DNS), which resolves domain names to IP addresses that browsers can use to fetch the resource.
+
+## TCP/IP Connection
+
+Description of the TCP/IP protocol suite, focusing on how a connection is established and maintained between the client and the server.
+
+## Firewall Considerations
+
+Overview of how firewalls inspect incoming and outgoing traffic to block malicious data while allowing legitimate communication.
+
+## HTTPS and SSL/TLS
+
+Explanation of the HTTPS protocol and SSL/TLS encryption, which protect data exchanged between the browser and the server.
+
+## Load Balancer
+
+Discussion on the role of load balancers in distributing client requests across multiple servers to ensure reliability and speed.
+
+## Web Server Interaction
+
+Description of how web servers process incoming requests and serve content back to the user.
+
+## Application Server Dynamics
+
+Insight into how application servers handle dynamic content generation and database interaction.
+
+## Database Involvement
+
+Exploration of how databases are queried and how data is managed during a user's interaction with a web application.
+
+## Conclusion
+
+Summary of the topics covered and the importance of understanding these elements for anyone involved in web technology.
+
+## Further Reading
+
+- Link to additional resources
+- Suggested books and articles for deeper learning
+
+---
