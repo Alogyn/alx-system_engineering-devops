@@ -1,0 +1,63 @@
+# How to Create a Diagram Illustrating Web Request Processes
+
+## Overview
+This guide explains how to create a diagram illustrating the sequence of events from when a user types 'https://www.google.com' in a web browser to receiving the web page. This diagram will help visualize complex interactions such as DNS resolution, TCP/IP connections, and the role of firewalls, among others.
+
+## Tools Required
+You can use any of the following tools to create your diagram:
+- Gliffy
+- Lucidchart
+- Draw.io
+- Microsoft Visio
+
+## Diagram Creation Steps
+
+### 1. **Start Your Diagram Tool**
+   - Open your chosen diagram tool and select a blank template or a flowchart template.
+
+### 2. **Draw the User Action**
+   - Represent the user or the browser where the URL is typed.
+   - Use an arrow to denote action flow from the user to the internet.
+
+### 3. **DNS Resolution**
+   - Add a 'DNS Server' block.
+   - Connect with an arrow labeled "DNS Lookup" from the browser.
+   - Return an arrow labeled "IP Address" to represent the DNS response.
+
+### 4. **TCP/IP Connection**
+   - Show this connection reaching the server IP on the appropriate port (443 for HTTPS).
+
+### 5. **Encryption via HTTPS/SSL**
+   - Indicate encryption with a labeled arrow "Encrypted Traffic (HTTPS/SSL)".
+
+### 6. **Firewall**
+   - Insert a 'Firewall' block.
+   - Show traffic passing through with directional arrows.
+
+### 7. **Load Balancer**
+   - Place a 'Load Balancer' block after the firewall.
+   - Indicate distribution of requests.
+
+### 8. **Web Server Interaction**
+   - Connect the load balancer to a 'Web Server'.
+   - Indicate processing of the request.
+
+### 9. **Application Server Dynamics**
+   - Arrow from web server to 'Application Server'.
+   - Show page generation here.
+
+### 10. **Database Interaction**
+   - Connect 'Application Server' to 'Database'.
+   - Show data requests and responses.
+
+### 11. **Response to User**
+   - Arrow back from web server/application server to the user's browser labeled "Web Page".
+
+## Finalizing and Sharing Your Diagram
+   - Ensure all components are clearly labeled and the flow is logical.
+   - Export the diagram as an image or PDF.
+   - Upload the diagram to an image hosting service or directly in your GitHub repository.
+   - Use the Markdown format to embed the image in your documentation:
+
+```markdown
+![Web Request Flow Diagram](URL_to_your_diagram_image)
