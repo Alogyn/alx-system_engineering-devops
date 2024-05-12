@@ -1,42 +1,16 @@
 #!/usr/bin/env bash
-# This line specifies the shell under which the script will run. It uses the env command
-# to locate and launch the first instance of bash found in the system's PATH.
+# Print domains and subdomains
 
-# Script Usage:
-# ./0-world_wide_web <domain> [subdomain]
-# This script displays DNS record information about specific subdomains. If no subdomain is specified,
-# it will show information for predefined subdomains (www, lb-01, web-01, web-02).
-
-# Function: domain_information
-# Purpose: This function fetches and displays the DNS record for a given subdomain of a specified domain.
-# Parameters:
-#   $1 - The main domain name
-#   $2 - The subdomain name
-domain_information () {
-    # Use the 'dig' command to query DNS records for the full subdomain, process the output to extract the necessary parts.
-    # - dig "$2.$1" sends a DNS query for the combined subdomain and domain.
-    # - grep '-A1 'ANSWER SECTION:'' filters the output to show only the ANSWER SECTION and the line following it.
-    # - tr '\t' '\n' replaces tabs with newlines to simplify further processing.
-    # - tail -2 takes the last two lines of the output, which should include the record type and IP.
-    # - tr '\n' ' ' changes newlines to spaces for easier parsing.
-    line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
-
-    # Use awk to format the output string.
-    # - It prints "The subdomain [SUBDOMAIN] is a [RECORD TYPE] record and points to [IP]"
-    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+print_domain_subdomain () {
+    dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
 }
 
-# Check the number of arguments provided to the script.
-# "$#" is the number of arguments.
-if [ "$#" == 1 ]; then
-  # If only one argument is provided (the domain), call domain_information for each of the predefined subdomains.
-  domain_information "$1" "www"
-  domain_information "$1" "lb-01"
-  domain_information "$1" "web-01"
-  domain_information "$1" "web-02"
-elif [ "$#" == 2 ]; then
-  # If two arguments are provided (the domain and a specific subdomain), call domain_information for that subdomain.
-  domain_information "$1" "$2"
+if [ "$#" -eq 2 ]
+then
+    print_domain_subdomain "$2.$1" "$2"
+else
+    print_domain_subdomain "www.$1" "www"
+    print_domain_subdomain "lb-01.$1" "lb-01"
+    print_domain_subdomain "web-01.$1" "web-01"
+    print_domain_subdomain "web-02.$1" "web-02"
 fi
-# There is no else clause to handle incorrect usage (e.g., wrong number of arguments). This could be added
-# to enhance user experience and error handling.
