@@ -21,7 +21,7 @@ The root cause was a misconfiguration in the load balancer settings, which led t
   ![Alert Notification](https://via.placeholder.com/100x100.png?text=Alert)
   
 - **10:05 AM:** Initial investigation began; assumption was a database overload due to high traffic.  
-  ![Database Check](https://via.placeholder.com/100x100.png?text=Database)
+  ![Database Check](https://firefly.adobe.com/public/t2i?id=urn%3Aaaid%3Asc%3AEU%3A651a5290-af2e-480e-b6b2-ca143f656060&ff_channel=shared_link&ff_source=Text2Image)
 
 - **10:15 AM:** Database performance metrics checked; no unusual activity found.
 
