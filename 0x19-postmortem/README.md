@@ -21,7 +21,7 @@ The root cause was a misconfiguration in the load balancer settings, which led t
   ![Alert Notification](https://via.placeholder.com/100x100.png?text=Alert)
   
 - **10:05 AM:** Initial investigation began; assumption was a database overload due to high traffic.  
-![Firefly Design an illustration of a database performance check, highlighting metrics such as query r](https://github.com/Alogyn/alx-system_engineering-devops/assets/138708102/0799c3d7-aceb-46f6-90b1-6027e89bd395)
+![665daa93ed6d7_download](https://github.com/Alogyn/alx-system_engineering-devops/assets/138708102/25550e06-6c1f-42b9-a016-280ac2fbe395)
 
 
 - **10:15 AM:** Database performance metrics checked; no unusual activity found.
