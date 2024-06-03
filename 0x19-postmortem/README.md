@@ -1,6 +1,6 @@
 # Postmortem: When the Load Balancer Went Rogue
 
-![Outage Diagram](https://via.placeholder.com/600x300.png?text=Outage+Diagram)
+![Firefly Generate a diagram illustrating an e-commerce platform outage, showing a timeline from detec](https://github.com/Alogyn/alx-system_engineering-devops/assets/138708102/878a4cbb-f7f6-4420-83e6-674010bfb5ac)
 
 ## Issue Summary
 
@@ -18,22 +18,16 @@ The root cause was a misconfiguration in the load balancer settings, which led t
 ## Timeline
 
 - **10:00 AM:** Issue detected by monitoring alerts indicating high error rates and service unavailability.  
-  ![Alert Notification](https://via.placeholder.com/100x100.png?text=Alert)
   
 - **10:05 AM:** Initial investigation began; assumption was a database overload due to high traffic.  
-![665daa93ed6d7_download](https://github.com/Alogyn/alx-system_engineering-devops/assets/138708102/25550e06-6c1f-42b9-a016-280ac2fbe395)
-
 
 - **10:15 AM:** Database performance metrics checked; no unusual activity found.
 
 - **10:30 AM:** Network team alerted; began checking network components and firewall settings.  
-  ![Network Check](https://via.placeholder.com/100x100.png?text=Network)
 
 - **11:00 AM:** Misleading path: suspected DDoS attack; traffic analyzed, ruled out as a cause.  
-  ![DDoS Check](https://via.placeholder.com/100x100.png?text=DDoS)
 
 - **11:30 AM:** Escalated to infrastructure team; deeper investigation into server logs.  
-  ![Log Analysis](https://via.placeholder.com/100x100.png?text=Logs)
 
 - **12:00 PM:** Identified load balancer misconfiguration; all traffic was incorrectly routed, causing server overload.
 
@@ -42,7 +36,6 @@ The root cause was a misconfiguration in the load balancer settings, which led t
 - **1:00 PM:** Load balancer configuration updated and tested; services started recovering.
 
 - **1:30 PM:** Full service restored; monitoring continued for stability.  
-  ![Service Restored](https://via.placeholder.com/100x100.png?text=Restored)
 
 ## Root Cause and Resolution
 
@@ -66,9 +59,8 @@ The load balancer settings were corrected by reassigning appropriate weights to 
 - Conduct training sessions for the DevOps team on best practices for load balancer management.
 - Schedule regular reviews of load balancer configurations and performance metrics.
 
-![Load Balancer Maintenance](https://via.placeholder.com/600x300.png?text=Load+Balancer+Maintenance)
+![Firefly Create an illustration of load balancer maintenance, showing configuration updates, server w](https://github.com/Alogyn/alx-system_engineering-devops/assets/138708102/a43e0ffd-044d-48c9-8328-0d1f86c5424c)
 
 ---
 
 By addressing these issues and implementing the above measures, we aim to prevent similar outages in the future and ensure a more robust and reliable service for our users. Let's keep our load balancers in check and our servers happy!
-
