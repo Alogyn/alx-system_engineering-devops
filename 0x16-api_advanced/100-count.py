@@ -23,7 +23,7 @@ def count_words(subreddit, word_list, after=None, counts=None):
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {
         "User-Agent": "0x16-api_advanced:project: \
-        v1.0.0 (by /u/firdaus_cartoon_jr)"
+                v1.0.0 (by /u/firdaus_cartoon_jr)"
     }
     params = {
         "after": after,
