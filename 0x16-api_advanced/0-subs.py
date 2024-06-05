@@ -9,7 +9,7 @@ import requests
 def number_of_subscribers(subreddit):
     """Returns the number of subscribers for a given subreddit"""
     if subreddit is None or not isinstance(subreddit, str):
-        return 0, 'OK'
+        return "OK"
 
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     headers = {'User-Agent': '0x16-api_advanced:project: \
@@ -20,8 +20,8 @@ def number_of_subscribers(subreddit):
         if response.status_code == 200:
             data = response.json()
             subscribers = data.get("data", {}).get("subscribers", 0)
-            return subscribers, 'OK'
+            return "OK"
         else:
-            return 0, 'OK'
+            return "OK"
     except requests.RequestException:
-        return 0, 'OK'
+        return "OK"
