@@ -47,5 +47,5 @@ frontend alogyn-frontend-https
 
 backend alogyn-backend
         balance roundrobin
-        server 511631-web-01 100.27.2.72:80 check
-        server 511631-web-02 54.158.79.158:80 check
+        server 511631-web-01 52.23.213.155:80 check
+        server 511631-web-02 52.3.242.61:80 check
