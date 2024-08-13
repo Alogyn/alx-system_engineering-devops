@@ -7,11 +7,12 @@ headers = {"User-Agent": "MyCustomUserAgent/1.0"}
 
 def number_of_subscribers(subreddit):
     """Return the total number of subscribers on a given subreddit"""
-    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    request = requests.get(
-        url,
+    req = requests.get(
+        "https://www.reddit.com/r/{}/about.json".format(subreddit),
         headers={"User-Agent": "Custom"},
-    if request.status_code == 200:
-        return request.json().get("data").get("subscribers")
+    )
+
+    if req.status_code == 200:
+        return req.json().get("data").get("subscribers")
     else:
         return 0
