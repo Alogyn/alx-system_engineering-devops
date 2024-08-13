@@ -12,31 +12,16 @@ def top_ten(subreddit):
 
     :param subreddit: the name of the subreddit
     """
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
-    headers = {
-        "User-Agent": "0x16-api_advanced:project: \
-                v1.0.0 (by /u/firdaus_cartoon_jr)"
-    }
+    req = requests.get(
+        "https://www.reddit.com/r/{}/hot.json".format(subreddit),
+        headers={"User-Agent": "Custom"},
+        params={"limit": 10},
+    )
 
-    response = requests.get(url, headers=headers, allow_redirects=False)
-    if response.status_code != 200:
-        print(None)
-        return
-
-    try:
-        data = response.json().get("data")
-        children = data.get("children")
-    except ValueError:
-        print(None)
-        return
-
-    if children:
-        for child in children:
-            title = child.get("data").get("title")
+    if req.status_code == 200:
+        for get_data in req.json().get("data").get("children"):
+            dat = get_data.get("data")
+            title = dat.get("title")
             print(title)
     else:
         print(None)
-
-
-if __name__ == "__main__":
-    top_ten(sys.argv[1])
