@@ -10,7 +10,7 @@ def number_of_subscribers(subreddit):
     """Return the total number of subscribers on a given subreddit"""
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     headers = {
-        'User-Agent': 'MyRedditApp/1.0 (by /u/firdaus_cartoon_jr)'
+        'User-Agent': 'MyRedditApp/1.0 (by /u/Alogyn)'
     }
 
     try:
