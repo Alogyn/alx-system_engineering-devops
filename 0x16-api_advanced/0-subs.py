@@ -2,8 +2,6 @@
 """Function to query subscribers on a given Reddit subreddit"""
 import requests
 
-headers = {"User-Agent": "MyCustomUserAgent/1.0"}
-
 
 def number_of_subscribers(subreddit):
     """Return the total number of subscribers on a given subreddit"""
