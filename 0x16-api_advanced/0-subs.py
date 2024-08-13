@@ -10,14 +10,14 @@ def number_of_subscribers(subreddit):
     """Return the total number of subscribers on a given subreddit"""
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     headers = {
-        'User-Agent': 'MyRedditApp/1.0 (by /u/YourUsername; contact: your.email@example.com)'
+        'User-Agent': 'MyRedditApp/1.0 (by /u/firdaus_cartoon_jr)'
     }
 
     try:
         response = requests.get(url, headers=headers, allow_redirects=False)
         print(f"Status Code: {response.status_code}")
         if response.status_code == 403:
-            print("403 Forbidden: Access is denied. Check subreddit visibility and User-Agent.")
+            print("403 Forbidden: Access is denied.")
             return 0
         elif response.status_code != 200:
             print(f"Unexpected Status Code: {response.status_code}")
