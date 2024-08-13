@@ -14,7 +14,7 @@ def top_ten(subreddit):
     """
     req = requests.get(
         "https://www.reddit.com/r/{}/hot.json".format(subreddit),
-        headers={"User-Agent": "Custom"},
+        headers={"User-Agent": "Mozilla/5.0"},
         params={"limit": 10},
     )
 
