@@ -1,23 +1,12 @@
-#!/usr/bin/env bash
-# Gracefully reloads Gunicorn.
+#!/bin/bash
 
-# Find Gunicorn process IDs
-gunicorn_pids=$(pgrep gunicorn)
+# Get the master process ID of Gunicorn
+pid=$(pgrep -f 'gunicorn')
 
-if [ -z "$gunicorn_pids" ]; then
-    echo "No Gunicorn processes found."
-    exit 1
-fi
-
-# Stop old workers gracefully
-echo "Stopping old workers gracefully..."
-for pid in $gunicorn_pids; do
+if [ -n "$pid" ]; then
+    # Send SIGHUP signal to the master process to gracefully reload Gunicorn
     kill -HUP "$pid"
-done
-
-# Wait for old workers to finish processing
-echo "Waiting for old workers to finish processing..."
-sleep 5
-
-echo "Graceful reload complete"
-
+    echo "Gunicorn reloaded gracefully."
+else
+    echo "Gunicorn master process not found."
+fi
