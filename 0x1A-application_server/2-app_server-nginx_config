@@ -6,7 +6,7 @@ server {
     server_name 52.23.213.155
 
     # Customize HTTP response header
-    add_header X-Served-By 228560-web-01;
+    add_header X-Served-By 511631-web-01;
 
     # Serve /airbnb-onepage/ route on AirBnB_clone_v3
     location = /airbnb-onepage/ {
