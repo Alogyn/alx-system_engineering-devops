@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-sudo pkill -HUP gunicorn
-sudo systemctl restart gunicorn.service
-sudo systemctl restart gunicorn_api.service
+ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
