@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Gracefully reloads Gunicorn by sending SIGHUP to the master process
+# Restarts Gunicorn
 
 # Find the Gunicorn master process ID
 gunicorn_master_pid=$(pgrep -f 'gunicorn.*master')
@@ -9,8 +9,15 @@ if [ -z "$gunicorn_master_pid" ]; then
     exit 1
 fi
 
-# Reload Gunicorn gracefully
-echo "Sending SIGHUP to Gunicorn master process (PID: $gunicorn_master_pid)..."
-kill -HUP "$gunicorn_master_pid"
+# Stop Gunicorn master process
+echo "Stopping Gunicorn master process (PID: $gunicorn_master_pid)..."
+kill -QUIT "$gunicorn_master_pid"
 
-echo "Graceful reload complete"
+# Wait for a few seconds to ensure Gunicorn has stopped
+sleep 2
+
+# Start Gunicorn again
+echo "Starting Gunicorn..."
+gunicorn --bind 0.0.0.0:8001 --workers 4 web_flask.0-hello_route:app &
+
+echo "Gunicorn restarted successfully"
