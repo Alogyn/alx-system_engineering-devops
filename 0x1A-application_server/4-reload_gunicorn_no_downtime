@@ -2,7 +2,7 @@
 # Gracefully reloads Gunicorn by sending SIGHUP to the master process
 
 # Find the Gunicorn master process ID
-gunicorn_master_pid=$(pgrep -f 'gunicorn: master')
+gunicorn_master_pid=$(pgrep -f 'gunicorn')
 
 if [ -z "$gunicorn_master_pid" ]; then
     echo "No Gunicorn master process found."
